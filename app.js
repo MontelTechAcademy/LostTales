@@ -232,5 +232,28 @@ function MapI7(){
         console.log("YOU MOVED SOUTH");
         MapH7();
     }
+function MapI8(){
+    console.log("I8");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapI7();
+    }
+
+    if(directions[index] == "West"){
+        console.log("Can't Move Here!!");
+        MapH7();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapI7();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapI8();
      
+    }
