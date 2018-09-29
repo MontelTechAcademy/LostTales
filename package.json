@@ -1,0 +1,23 @@
+{
+  "name": "losttales",
+  "version": "1.0.0",
+  "description": "LostTails",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MontelTechAcademy/LostTales.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MontelTechAcademy/LostTales/issues"
+  },
+  "homepage": "https://github.com/MontelTechAcademy/LostTales#readme",
+  "dependencies": {
+    "figlet": "^1.2.0",
+    "readline-sync": "^1.4.9"
+  }
+}
