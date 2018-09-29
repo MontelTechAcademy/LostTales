@@ -156,8 +156,8 @@ function MapH7(){
 
 }
 
-function MapG6(){
-    console.log("G6");
+function MapG7(){
+    console.log("G7");
     directions = ['North', 'West', 'East', 'South'],
         index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
@@ -183,3 +183,29 @@ function MapG6(){
 
 }
 
+function MapG7(){
+    console.log("G7");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapG6();
+    }
+
+    if(directions[index] == "West"){
+        console.log("Can't Move Here!!");
+        MapG7();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapH7();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapH8();
+    }
+
+}
