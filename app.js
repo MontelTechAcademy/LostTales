@@ -697,3 +697,107 @@ function MapH15() {
     }
 
 }
+function MapH16() {
+    console.log("H16");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapH15();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Cant Move Here!!");
+        MapH16()
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapI16()
+    }
+
+    if (directions[index] == "South") {
+        console.log("Cant Move Here");
+        MapH16()
+    }
+
+}
+function MapH3() {
+    console.log("H3");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapH2();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapG3()
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapI3()
+    }
+
+    if (directions[index] == "South") {
+        console.log("Cant Move Here");
+        MapH3()
+    }
+
+}
+function MapH2() {
+    console.log("H2");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapH1();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Cant Move Here!!");
+        MapH2()
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapI2()
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapH3()
+    }
+
+}
+function MapH1() {
+    console.log("H1");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("Cant Move Here!!!");
+        MapH1();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Cant Move Here!!");
+        MapH1()
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapI1()
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapH2()
+    }
+
+}
