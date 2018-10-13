@@ -289,4 +289,81 @@ function MapI9() {
         MapI9();
     }
 }
+function MapI10() {
+    console.log("I10");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapI9();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH10();
+    }
+
+    if (directions[index] == "East") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI10();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapI11();
+    }
+}
+function MapI13() {
+    console.log("I13");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("CAN'T DRIVE HERE!!!");
+        MapI10();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH11();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapJ11();
+    }
+
+    if (directions[index] == "South") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI11();
+    }
+}
+function MapI15() {
+    console.log("I15");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI15();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH15();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapJ15();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapI16();
+    }
+}
+
+
 
