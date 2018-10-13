@@ -262,7 +262,7 @@ function MapI8(){
     console.log("I9");
     directions = ['North', 'West', 'East', 'South'],
         index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
+P  
     if(directions[index] == "North"){
         console.log("YOU MOVED NORTH!!!");
         MapI8();
@@ -277,13 +277,34 @@ function MapI8(){
         console.log("YOU MOVED EAST!!");
         MapI8();
     }
-
+'M
+    ',
     if(directions[index] == "South"){
         console.log("YOU MOVED SOUTH");
         MapI9();
     }
+//square J8
+    function mapJ8() {
+        console.log('J8');
+        direction = ['North',  'West',  'East', 'South']
+             index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
-    function mapj8() {
-        console.log('I9');
-        direction
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapI8();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
+        MapH8();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapI8();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapI9();
     }
