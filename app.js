@@ -283,6 +283,86 @@ P
         console.log("YOU MOVED SOUTH");
         MapI9();
     }
+<<<<<<< HEAD
+}
+function MapI10() {
+    console.log("I10");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapI9();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH10();
+    }
+
+    if (directions[index] == "East") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI10();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapI11();
+    }
+}
+function MapI13() {
+    console.log("I13");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("CAN'T DRIVE HERE!!!");
+        MapI10();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH11();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapJ11();
+    }
+
+    if (directions[index] == "South") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI11();
+    }
+}
+function MapI15() {
+    console.log("I15");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI15();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH15();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapJ15();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapI16();
+    }
+}
+
+
+=======
 //square J8
     function mapJ8() {
         console.log('J8');
@@ -298,6 +378,7 @@ P
         console.log("You MOVED WEST!!");
         MapI8();
     }
+>>>>>>> 34dc20e8eef2df8bf7d25d91e7cdc86d63fe962b
 
     if(directions[index] == "East"){
         console.log("YOU MOVED EAST!!");
