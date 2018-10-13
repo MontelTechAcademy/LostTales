@@ -995,3 +995,55 @@ function MapH15() {
 
 }
 >>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
+function MapI16() {
+    console.log("I16");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapI15();
+    }
+
+    if (directions[index] == "West") {
+        console.log("YOU MOVED WEST!!");
+        MapH16();
+    }
+
+    if (directions[index] == "East") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI16();
+    }
+
+    if (directions[index] == "South") {
+        console.log("CAN'T MOVE HERE!!");
+        MapI16();
+    }
+}
+    function MapI5() {
+    console.log("I5");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapI4();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Can't Move Here!!");
+        MapI5();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapJ5();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapI6();
+    }
+}
+
+
