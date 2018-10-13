@@ -243,16 +243,70 @@ function MapH11() {
         MapG11()
     }
 
+<<<<<<< HEAD
+function MapG9() {
+    console.log("G9");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapG8();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Can't Move Here!!");
+        MapG9();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapH9();
+=======
     if (directions[index] == "East") {
         console.log("YOU MOVED EAST!!");
         MapI11()
 =======
         MapJ15();
 >>>>>>> 94469a479e9bd1a0bff56b016491bcf4c0642718
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     }
 
     if (directions[index] == "South") {
         console.log("YOU MOVED SOUTH");
+<<<<<<< HEAD
+        MapG10();
+    }
+}
+
+function MapG5() {
+    console.log("G5");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapG4();
+    }
+
+    if (directions[index] == "West") {
+        console.log("You Moved West");
+        MapF5);
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CANT MOVE HERE!!");
+        MapG5();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapG6();
+    }
+}
+function MapG4() {
+    console.log("G4");
+=======
 <<<<<<< HEAD
         MapH12()
     }
@@ -260,11 +314,25 @@ function MapH11() {
 }
 function MapH12() {
     console.log("H12");
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     directions = ['North', 'West', 'East', 'South'],
         index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
     if (directions[index] == "North") {
         console.log("YOU MOVED NORTH!!!");
+<<<<<<< HEAD
+        MapG3();
+    }
+
+    if (directions[index] == "West") {
+        console.log("You MOVED WEST!!");
+        MapF4();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CANT MOVE HERE");
+        MapG4();
+=======
         MapH11();
     }
 
@@ -276,36 +344,93 @@ function MapH12() {
     if (directions[index] == "East") {
         console.log("Cant Move Here!!");
         MapH12()
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     }
 
     if (directions[index] == "South") {
         console.log("YOU MOVED SOUTH");
+<<<<<<< HEAD
+        MapG5();
+    }
+}
+
+function MapG3() {
+    console.log("G3");
+=======
         MapH13()
     }
 
 }
 function MapH13() {
     console.log("H13");
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     directions = ['North', 'West', 'East', 'South'],
         index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
     if (directions[index] == "North") {
+<<<<<<< HEAD
+        console.log("YOU CANT MOVE HERE!!!");
+        MapG3();
+=======
         console.log("YOU MOVED NORTH!!!");
         MapH12();
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     }
 
     if (directions[index] == "West") {
         console.log("YOU MOVED WEST!!");
+<<<<<<< HEAD
+        MapF3();
+=======
         MapG13()
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     }
 
     if (directions[index] == "East") {
         console.log("YOU MOVED EAST!!");
+<<<<<<< HEAD
+        MapH3();
+=======
         MapI13()
+>>>>>>> 501e099fcc597cf1a8049cd4a10acaf09b57ec07
     }
 
     if (directions[index] == "South") {
         console.log("YOU MOVED SOUTH");
+<<<<<<< HEAD
+        MapG4();
+    }
+}
+
+function MapF1() {
+    console.log("F1");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU CANT MOVE HERE!!!");
+        MapF1();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Can't Move Here!!");
+        MapF1();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CANT MOVE HERE!!");
+        MapF1();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapF2();
+    }
+}
+
+function MapF2() {
+    console.log("F2");
+=======
         MapH14()
     }
 
