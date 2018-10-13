@@ -282,4 +282,8 @@ function MapI8(){
         console.log("YOU MOVED SOUTH");
         MapI9();
     }
-        
+
+    function mapj8() {
+        console.log('I9');
+        direction
+    }
