@@ -291,20 +291,69 @@ P
 
     if(directions[index] == "North"){
         console.log("YOU MOVED NORTH!!!");
-        MapI8();
+        MapJ7();
     }
 
     if(directions[index] == "West"){
         console.log("You MOVED WEST!!");
-        MapH8();
+        MapI8();
     }
 
     if(directions[index] == "East"){
         console.log("YOU MOVED EAST!!");
-        MapI8();
+        MapK8();
     }
 
     if(directions[index] == "South"){
         console.log("YOU MOVED SOUTH");
-        MapI9();
+        MapJ9();
     }
+
+        function mapJ7() {
+        console.log('J7');
+        direction = ['North',  'West',  'East', 'South']
+             index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapJ6();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
+        MapI7();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapK7();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapJ8();
+    }
+     function mapJ6() {
+        console.log('J7');
+        direction = ['North',  'West',  'East', 'South']
+             index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapJ5();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
+        MapI6();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapK6();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapJ7();
+    }       
