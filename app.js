@@ -649,3 +649,30 @@ function MapH14() {
         MapJ7();
     }       
 >>>>>>> f2a521a1e77c4eba8fbb96800da0b53782f747dc
+
+function MapH15() {
+    console.log("H15");
+    directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU MOVED NORTH!!!");
+        MapH14();
+    }
+
+    if (directions[index] == "West") {
+        console.log("Cant Move Here!!");
+        MapH15()
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU MOVED EAST!!");
+        MapI15()
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU MOVED SOUTH");
+        MapH16()
+    }
+
+}
