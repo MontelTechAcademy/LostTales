@@ -578,22 +578,74 @@ function MapH14() {
 
     if(directions[index] == "North"){
         console.log("YOU MOVED NORTH!!!");
+        MapJ7();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
         MapI8();
     }
 >>>>>>> 34dc20e8eef2df8bf7d25d91e7cdc86d63fe962b
 
-    if(directions[index] == "West"){
-        console.log("You MOVED WEST!!");
-        MapH8();
-    }
-
     if(directions[index] == "East"){
         console.log("YOU MOVED EAST!!");
-        MapI8();
+        MapK8();
     }
 
     if(directions[index] == "South"){
         console.log("YOU MOVED SOUTH");
-        MapI9();
+        MapJ9();
     }
+
+        function mapJ7() {
+        console.log('J7');
+        direction = ['North',  'West',  'East', 'South']
+             index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapJ6();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
+        MapI7();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapK7();
+    }
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapJ8();
+    }
+     function mapJ6() {
+        console.log('J7');
+        direction = ['North',  'West',  'East', 'South']
+             index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if(directions[index] == "North"){
+        console.log("YOU MOVED NORTH!!!");
+        MapJ5();
+    }
+
+    if(directions[index] == "West"){
+        console.log("You MOVED WEST!!");
+        MapI6();
+    }
+
+    if(directions[index] == "East"){
+        console.log("YOU MOVED EAST!!");
+        MapK6();
+    }
+<<<<<<< HEAD
 >>>>>>> 94469a479e9bd1a0bff56b016491bcf4c0642718
+=======
+
+    if(directions[index] == "South"){
+        console.log("YOU MOVED SOUTH");
+        MapJ7();
+    }       
+>>>>>>> f2a521a1e77c4eba8fbb96800da0b53782f747dc
