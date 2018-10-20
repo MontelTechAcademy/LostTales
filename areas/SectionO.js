@@ -22,12 +22,128 @@ var SectionN = require('./areas/SectionO');
 var SectionO = require('./areas/SectionP');
 
 module.exports = {
-    foo: function () {
-        // whatever
-        console.log("Hello World!!! from FOO")
+    MapO4: function () {
+        console.log("O4");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU CANT MOVE HERE!!!");
+            MapO4();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU MOVED WEST!!");
+            MapN4();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST !!");
+            MapN4();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapO5();
+        }
     },
-    bar: function () {
-        // whatever
-        console.log("Hello World!!! from BAR")
-    }
-};
+    MapO5: function () {
+        console.log("O5");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU MOVED NORTH!!!");
+            MapO4();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU CANT MOVE HERE!!");
+            MapO5();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST !!");
+            MapP5();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapO6();
+        }
+    },
+    MapO6: function () {
+        console.log("O6");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU MOVED NORTH!!!");
+            MapO5();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU MOVED WEST!!");
+            MapN6();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST !!");
+            MapP6();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapO6();
+        }
+    },
+    MapO7: function () {
+        console.log("O7");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU MOVED NORTH!!!");
+            MapO6();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU CANT MOVE HERE!!");
+            MapO7();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU CANT MOVE HERE !!");
+            MapO7();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapO8();
+        }
+    },
+    MapO8: function () {
+        console.log("O8");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU MOVED NORTH!!!");
+            MapO7();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU CANT MOVE HERE!!");
+            MapO8();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST !!");
+            MapP8();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapO9();
+        }
+    },
