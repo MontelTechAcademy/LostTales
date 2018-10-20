@@ -1,6 +1,9 @@
 var readlineSync = require('readline-sync');
 var figlet = require('figlet');
 
+//Mechanics
+var Stamina = require('./mechanics/stamina');
+
 //Sections
 var SectionA = require('./areas/SectionA');
 var SectionB = require('./areas/SectionB');
