@@ -33,11 +33,36 @@ module.exports = {
 
         if (directions[index] == "East") {
             console.log("YOU MOVED EAST!!");
-            MapE4();
+            MapF3();
         }
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            MapD5();
+            MapE4();
+        }
+    },
+    MapE4: function () {
+        console.log("E4");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU MOVED NORTH!!!");
+            MapE3();
+        }
+
+        if (directions[index] == "West") {
+            console.log("YOU MOVED WEST!!");
+            MapD4();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST!!");
+            MapF4();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            MapE5();
         }
     },
