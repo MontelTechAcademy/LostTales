@@ -22,12 +22,12 @@ module.exports = {
             index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
         if (directions[index] == "North") {
-            console.log("YOU MOVED NORTH!!!");
-            MapA1();
+            console.log("Cant Move Here!!!");
+            MapB1();
         }
 
         if (directions[index] == "West") {
-            console.log("Cant Move Here!!");
+            console.log("YOU MOVED WEST!!");
             MapA2();
         }
 
