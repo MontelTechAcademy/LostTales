@@ -1,7 +1,32 @@
 var readlineSync = require('readline-sync');
 var figlet = require('figlet');
 
-function menu(){
+//Mechanics
+var Stamina = require('./mechanics/stamina');
+
+//Sections
+var SectionA = require('./areas/SectionA');
+var SectionB = require('./areas/SectionB');
+var SectionC = require('./areas/SectionC');
+var SectionD = require('./areas/SectionD');
+var SectionE = require('./areas/SectionE');
+var SectionF = require('./areas/SectionF');
+var SectionG = require('./areas/SectionG');
+var SectionH = require('./areas/SectionH');
+var SectionI = require('./areas/SectionI');
+var SectionJ = require('./areas/SectionK');
+var SectionK = require('./areas/SectionL');
+var SectionL = require('./areas/SectionM');
+var SectionM = require('./areas/SectionN');
+var SectionN = require('./areas/SectionO');
+var SectionO = require('./areas/SectionP');
+
+
+
+//+--------------------+
+//| Menu main function |
+//+--------------------+
+function menu() {
     console.log(figlet.textSync('LOST TALES!', {
         font: 'Standard',
         horizontalLayout: 'default',
@@ -10,7 +35,7 @@ function menu(){
 
     console.log("Main Menu");
 
-    mainmenu = ['start', 'options'],
+    let mainmenu = ['start', 'options'],
         index = readlineSync.keyInSelect(mainmenu, "What will you like to do?");
 
     if(mainmenu[index] == "start"){
@@ -24,8 +49,11 @@ function menu(){
 }
 menu();
 
+// +-----------------+
+// | Starup Function |
+// +-----------------+
 function startup() {
-    directions = ['North', 'West', 'East', 'South'],
+    let directions = ['North', 'West', 'East', 'South'],
         index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
     if(directions[index] == "North"){
@@ -49,163 +77,3 @@ function startup() {
     }
 
 };
-
-function MapH7(){
-    console.log("H7");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("YOU MOVED NORTH!!!");
-        MapH6();
-    }
-
-    if(directions[index] == "West"){
-        console.log("YOU MOVED WEST!!");
-        startup()
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        startup()
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        startup()
-    }
-
-}
-
-function MapH6(){
-    console.log("H6");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("The Woods are to thick to pass");
-        MapH6();
-    }
-
-    if(directions[index] == "West"){
-        console.log("YOU MOVED WEST!!");
-        startup()
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        startup()
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        startup()
-    }
-
-}
-function MapG8(){
-    console.log("G8");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("YOU MOVED NORTH!!!");
-        MapG7();
-    }
-
-    if(directions[index] == "West"){
-        console.log("YOU MOVED WEST!!");
-        MapF8()
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        startup()
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        MapG9()
-    }
-
-}
-function MapH7(){
-    console.log("H7");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("YOU MOVED NORTH!!!");
-        MapH6();
-    }
-
-    if(directions[index] == "West"){
-        console.log("YOU MOVED WEST!!");
-        startup()
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        startup()
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        startup()
-    }
-
-}
-
-function MapG7(){
-    console.log("G7");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("YOU MOVED NORTH!!!");
-        MapH6();
-    }
-
-    if(directions[index] == "West"){
-        console.log("Can't Move Here!!");
-        MapG6();
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        MapH7();
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        MapG8();
-    }
-
-}
-
-function MapG7(){
-    console.log("G7");
-    directions = ['North', 'West', 'East', 'South'],
-        index = readlineSync.keyInSelect(directions, 'What do you do now??');
-
-    if(directions[index] == "North"){
-        console.log("YOU MOVED NORTH!!!");
-        MapG6();
-    }
-
-    if(directions[index] == "West"){
-        console.log("Can't Move Here!!");
-        MapG7();
-    }
-
-    if(directions[index] == "East"){
-        console.log("YOU MOVED EAST!!");
-        MapH7();
-    }
-
-    if(directions[index] == "South"){
-        console.log("YOU MOVED SOUTH");
-        MapH8();
-    }
-
-}
