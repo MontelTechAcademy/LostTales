@@ -2,24 +2,24 @@ var readlineSync = require('readline-sync');
 var figlet = require('figlet');
 
 //Mechanics
-var Stamina = require('./mechanics/stamina');
+var Stamina = require('../mechanics/stamina');
 
 //Sections
-var SectionA = require('./areas/SectionA');
-var SectionB = require('./areas/SectionB');
-var SectionC = require('./areas/SectionC');
-var SectionD = require('./areas/SectionD');
-var SectionE = require('./areas/SectionE');
-var SectionF = require('./areas/SectionF');
-var SectionG = require('./areas/SectionG');
-var SectionH = require('./areas/SectionH');
-var SectionI = require('./areas/SectionI');
-var SectionJ = require('./areas/SectionK');
-var SectionK = require('./areas/SectionL');
-var SectionL = require('./areas/SectionM');
-var SectionM = require('./areas/SectionN');
-var SectionN = require('./areas/SectionO');
-var SectionO = require('./areas/SectionP');
+var SectionA = require('../areas/SectionA');
+var SectionB = require('../areas/SectionB');
+var SectionC = require('../areas/SectionC');
+var SectionD = require('../areas/SectionD');
+var SectionE = require('../areas/SectionE');
+var SectionF = require('../areas/SectionF');
+var SectionG = require('../areas/SectionG');
+var SectionH = require('../areas/SectionH');
+var SectionI = require('../areas/SectionI');
+var SectionJ = require('../areas/SectionK');
+var SectionK = require('../areas/SectionL');
+var SectionL = require('../areas/SectionM');
+var SectionM = require('../areas/SectionN');
+var SectionN = require('../areas/SectionO');
+var SectionO = require('../areas/SectionP');
 
 module.exports = {
    MapF1: function () {
@@ -119,7 +119,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionF.MapF5());
+            SectionF.MapF5();
         }
     },
       MapF5: function () {
@@ -219,7 +219,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionF.MapF14());
+            SectionF.MapF14();
         }
     },
        MapF14: function () {
@@ -244,7 +244,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionF.MapF15());
+            SectionF.MapF15();
         }
     },
        MapF15: function () {
@@ -269,7 +269,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionF.MapF16());
+            SectionF.MapF16();
         }
     },
        MapF16: function () {
@@ -294,7 +294,8 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("Can't Move Here!!");
-            SectionF.MapF16());
+            SectionF.MapF16();
         }
-    },
+    }
+};
     

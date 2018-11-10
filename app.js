@@ -58,22 +58,22 @@ function startup() {
 
     if(directions[index] == "North"){
         console.log("YOU MOVED NORTH!!!");
-        MapH7();
+        SectionH.MapH7();
     }
 
     if(directions[index] == "West"){
         console.log("YOU MOVED WEST!!");
-        startup()
+        SectionG.MapG8();
     }
 
     if(directions[index] == "East"){
         console.log("YOU MOVED EAST!!");
-        startup()
+        SectionI.MapI8();
     }
 
     if(directions[index] == "South"){
         console.log("YOU MOVED SOUTH");
-        startup()
+        SectionH.MapH9();
     }
 
 };
