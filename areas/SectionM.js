@@ -421,4 +421,5 @@ module.exports = {
         console.log("you moved south!!");
         SectionM.MapM2();
     }
+}
 };

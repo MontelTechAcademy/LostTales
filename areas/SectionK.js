@@ -46,7 +46,7 @@ module.exports = {
             console.log("YOU MOVED SOUTH");
             SectionK.MapK2();
         }
-    },            }
+    },            
     MapK4: function () {
     console.log("K4");
     let directions = ['North', 'West', 'East', 'South'],
@@ -346,4 +346,5 @@ module.exports = {
         console.log("Cant Move Here");
         SectionK.MapK17();
     }
-},
+}
+};

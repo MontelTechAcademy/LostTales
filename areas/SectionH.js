@@ -29,12 +29,12 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("Can't Move Here!!!");
-            SectionH.MapH1();
+            module.exports.MapH1();
         }
 
         if (directions[index] == "West") {
             console.log("Can't Move Here!!");
-            SectionH.MapH1();
+            module.exports.MapH1();
         }
 
         if (directions[index] == "East") {
@@ -44,7 +44,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH2();
+            module.exports.MapH2();
         }
     },
      MapH2: function () {
@@ -54,12 +54,12 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH1();
+            module.exports.MapH1();
         }
 
         if (directions[index] == "West") {
             console.log("Can't Move Here!!");
-            SectionH.MapH2();
+            module.exports.MapH2();
         }
 
         if (directions[index] == "East") {
@@ -69,7 +69,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH3();
+            module.exports.MapH3();
         }
     },
      MapH3: function () {
@@ -79,7 +79,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH2();
+            module.exports.MapH2();
         }
 
         if (directions[index] == "West") {
@@ -94,7 +94,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("Can't Move Here!!");
-            SectionH.MapH3();
+            module.exports.MapH3();
         }
     },
      MapH6: function () {
@@ -104,7 +104,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("Can't Move Here!!!");
-            SectionH.MapH6();
+            module.exports.MapH6();
         }
 
         if (directions[index] == "West") {
@@ -119,7 +119,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH2();
+            module.exports.MapH7();
         }
     },
      MapH7: function () {
@@ -129,7 +129,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH6();
+            module.exports.MapH6();
         }
 
         if (directions[index] == "West") {
@@ -144,7 +144,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH8();
+            module.exports.MapH8();
         }
     },
      MapH8: function () {
@@ -154,7 +154,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH7();
+            module.exports.MapH7();
         }
 
         if (directions[index] == "West") {
@@ -169,7 +169,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH9();
+            module.exports.MapH9();
         }
     },
      MapH9: function () {
@@ -179,7 +179,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH8();
+            module.exports.MapH8();
         }
 
         if (directions[index] == "West") {
@@ -194,7 +194,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH10();
+            module.exports.MapH10();
         }
     },
      MapH10: function () {
@@ -204,7 +204,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH9();
+            module.exports.MapH9();
         }
 
         if (directions[index] == "West") {
@@ -219,7 +219,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH11();
+            module.exports.MapH11();
         }
     },
      MapH11: function () {
@@ -229,7 +229,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH10();
+            module.exports.MapH10();
         }
 
         if (directions[index] == "West") {
@@ -244,7 +244,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH12();
+            module.exports.MapH12();
         }
     },
      MapH12: function () {
@@ -254,7 +254,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH11();
+            module.exports.MapH11();
         }
 
         if (directions[index] == "West") {
@@ -263,13 +263,13 @@ module.exports = {
         }
 
         if (directions[index] == "East") {
-            console.log("YOU MOVED EAST!!");
-            SectionH.MapH12();
+            console.log("cant move!!");
+            module.exports.MapH12();
         }
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH13();
+            module.exports.MapH13();
         }
     },
      MapH13: function () {
@@ -279,7 +279,7 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH12();
+            module.exports.MapH12();
         }
 
         if (directions[index] == "West") {
@@ -294,7 +294,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH14();
+            module.exports.MapH14();
         }
     },
      MapH14: function () {
@@ -304,22 +304,22 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH13();
+            module.exports.MapH13();
         }
 
         if (directions[index] == "West") {
-            console.log("YOU MOVED WEST!!");
-            SectionH.MapH14();
+            console.log("cant move here!!");
+            module.exports.MapH14();
         }
 
         if (directions[index] == "East") {
-            console.log("YOU MOVED EAST!!");
-            SectionH.MapH14();
+            console.log("cant move!!");
+            module.exports.MapH14();
         }
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH15();
+            module.exports.MapH15();
         }
     },
      MapH15: function () {
@@ -329,12 +329,12 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH14();
+            module.exports.MapH14();
         }
 
         if (directions[index] == "West") {
             console.log("Can't Move Here!!");
-            SectionH.MapH15();
+            module.exports.MapH15();
         }
 
         if (directions[index] == "East") {
@@ -344,7 +344,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionH.MapH16();
+            module.exports.MapH16();
         }
     },
      MapH16: function () {
@@ -354,12 +354,12 @@ module.exports = {
 
         if (directions[index] == "North") {
             console.log("YOU MOVED NORTH!!!");
-            SectionH.MapH15();
+            module.exports.MapH15();
         }
 
         if (directions[index] == "West") {
             console.log("Can't Move Here!!");
-            SectionH.MapH16();
+            module.exports.MapH16();
         }
 
         if (directions[index] == "East") {
@@ -369,7 +369,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("Can't Move Here");
-            SectionH.MapH16();
+            module.exports.MapH16();
         }
     }
 };
