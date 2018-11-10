@@ -94,7 +94,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH!!!");
-            SectionB.MapA4();
+            SectionA.MapA4();
         }
     },
     MapB4: function () {

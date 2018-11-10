@@ -59,7 +59,7 @@ module.exports = {
 
         if (directions[index] == "West") {
             console.log("Cant Move Here!!");
-            Section.MapA2();
+            SectionA.MapA2();
         }
 
         if (directions[index] == "East") {
@@ -69,7 +69,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("Cant Move Here");
-            SectionB.MapA2();
+            SectionA.MapA2();
         }
     },
      MapA8: function () {
