@@ -22,31 +22,29 @@ var SectionN = require('../areas/SectionO');
 var SectionO = require('../areas/SectionP');
 
 module.exports = {
-       MapM1: function () {
+    MapM1: function () {
         console.log("M1");
         let directions = ['North', 'West', 'East', 'South'],
             index = readlineSync.keyInSelect(directions, 'What do you do now??');
 
         if (directions[index] == "North") {
-            console.log("Cant Move Here!!!");
-            SectionA.MapM1();
+            console.log("YOU CAN'T MOVE HERE!!!");
+            SectionM.MapM1();
         }
 
         if (directions[index] == "West") {
-            console.log("YOU MOVED WEST!!");
-            SectionA.MapL1();
+            console.log("You moved west!!");
+            SectionL.MapL1();
         }
 
         if (directions[index] == "East") {
-            console.log("CANT MOVE HERE!!");
-            SectionB.MapO4();
+            console.log("YOU CAN'T MOVE HERE!!");
+            SectionM.MapM1();
         }
 
         if (directions[index] == "South") {
-            console.log("YOU MOVED SOUTH");
-            SectionA.MapM2();
-            
-            
+            console.log("you moved south!!");
+            SectionM.MapM2();
         }
     },
        MapM2: function () {
@@ -71,9 +69,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU CANT MOVE HERE");
-            SectionA.MapM2();
-            
-            
+            SectionA.MapM2();    
         }
     },
      MapM4: function () {
@@ -98,9 +94,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM5();
-            
-            
+            SectionA.MapM5();     
         }
     },
      MapM5: function () {
@@ -125,9 +119,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM6();
-            
-            
+            SectionA.MapM6();   
         }
     },
      MapM6: function () {
@@ -152,9 +144,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM7();
-            
-            
+            SectionA.MapM7();  
         }
     },
      MapM7: function () {
@@ -179,9 +169,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM8();
-            
-            
+            SectionA.MapM8();        
         }
     },
      MapM8: function () {
@@ -206,9 +194,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM9();
-            
-            
+            SectionA.MapM9();   
         }
     },
      MapM9: function () {
@@ -233,9 +219,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM10();
-            
-            
+            SectionA.MapM10();   
         }
     },
      MapM10: function () {
@@ -260,9 +244,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH!!!");
-            SectionA.MapM11();
-            
-            
+            SectionA.MapM11();    
         }
     },
      MapM11: function () {
@@ -287,9 +269,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM12();
-            
-            
+            SectionA.MapM12(); 
         }
     },
      MapM12: function () {
@@ -314,9 +294,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU CANT MOVE HERE");
-            SectionA.MapM12();
-            
-            
+            SectionA.MapM12();    
         }
     },
      MapM14: function () {
@@ -341,9 +319,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM15();
-            
-            
+            SectionA.MapM15();    
         }
     },
      MapM15: function () {
@@ -368,9 +344,7 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU MOVED SOUTH");
-            SectionA.MapM16();
-            
-            
+            SectionA.MapM16();   
         }
     },
      MapM16: function () {
@@ -395,9 +369,56 @@ module.exports = {
 
         if (directions[index] == "South") {
             console.log("YOU CANT MOVE HERE");
-            SectionA.MapM16();
-            
-            
+            SectionA.MapM16();   
         }
+    },
+        MapM2: function () {
+    console.log("M2");
+    let directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("You moved north!!!");
+        SectionM.MapM1();
+    }
+
+    if (directions[index] == "West") {
+        console.log("You moved west!!");
+        SectionL.MapL2();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM2();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM2();
+    }
+        },
+            MapM3: function () {
+    console.log("M3");
+    let directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU CAN'T MOVE HERE!!!");
+        SectionM.MapM2();
+    }
+
+    if (directions[index] == "West") {
+        console.log("You moved west!!");
+        SectionL.MapM2();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM1();
+    }
+
+    if (directions[index] == "South") {
+        console.log("you moved south!!");
+        SectionM.MapM2();
     }
 };
