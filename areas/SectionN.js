@@ -22,12 +22,29 @@ var SectionN = require('./areas/SectionO');
 var SectionO = require('./areas/SectionP');
 
 module.exports = {
-    foo: function () {
-        // whatever
-        console.log("Hello World!!! from FOO")
+    MapN4: function () {
+        console.log("N4);
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("Cant Move Here!!!");
+            SectionN.MapN4();
+        }
+
+        if (directions[index] == "West") {
+            console.log("Cant Move Here!!");
+            SectionA.MapA1();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU MOVED EAST!!");
+            SectionB.MapB1();
+        }
+
+        if (directions[index] == "South") {
+            console.log("YOU MOVED SOUTH");
+            SectionA.MapA2();
+        }
     },
-    bar: function () {
-        // whatever
-        console.log("Hello World!!! from BAR")
-    }
 };
