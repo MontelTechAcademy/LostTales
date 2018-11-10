@@ -22,12 +22,77 @@ var SectionN = require('./areas/SectionO');
 var SectionO = require('./areas/SectionP');
 
 module.exports = {
-    foo: function () {
-        // whatever
-        console.log("Hello World!!! from FOO")
+    MapM1: function () {
+        console.log("M1");
+        let directions = ['North', 'West', 'East', 'South'],
+            index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+        if (directions[index] == "North") {
+            console.log("YOU CAN'T MOVE HERE!!!");
+            SectionM.MapM1();
+        }
+
+        if (directions[index] == "West") {
+            console.log("You moved west!!");
+            SectionL.MapL1();
+        }
+
+        if (directions[index] == "East") {
+            console.log("YOU CAN'T MOVE HERE!!");
+            SectionM.MapM1();
+        }
+
+        if (directions[index] == "South") {
+            console.log("you moved south!!");
+            SectionM.MapM2();
+        }
     },
-    bar: function () {
-        // whatever
-        console.log("Hello World!!! from BAR")
+};MapM2: function () {
+    console.log("M2");
+    let directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("You moved north!!!");
+        SectionM.MapM1();
     }
-};
+
+    if (directions[index] == "West") {
+        console.log("You moved west!!");
+        SectionL.MapL2();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM2();
+    }
+
+    if (directions[index] == "South") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM2();
+    }
+},MapM3: function () {
+    console.log("M3");
+    let directions = ['North', 'West', 'East', 'South'],
+        index = readlineSync.keyInSelect(directions, 'What do you do now??');
+
+    if (directions[index] == "North") {
+        console.log("YOU CAN'T MOVE HERE!!!");
+        SectionM.MapM2();
+    }
+
+    if (directions[index] == "West") {
+        console.log("You moved west!!");
+        SectionL.MapM2();
+    }
+
+    if (directions[index] == "East") {
+        console.log("YOU CAN'T MOVE HERE!!");
+        SectionM.MapM1();
+    }
+
+    if (directions[index] == "South") {
+        console.log("you moved south!!");
+        SectionM.MapM2();
+    }
+},
